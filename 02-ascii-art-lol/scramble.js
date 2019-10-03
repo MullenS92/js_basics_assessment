@@ -28,7 +28,10 @@
   window.writeAscii = writeAscii;
   
   //function we use in exercise02.js to display our ascii art
+  
   function writeAscii(arr) {
     document.querySelector('#fixed').innerHTML = arr.join('\n');
   }
+
+
 }());
