@@ -15,5 +15,20 @@
 
 //your code here
 
+
+
+
+setTimeout(function(){
+    document.getElementById("title").innerHTML="Goodbye World"
+}, 3000)
+
+//  function myTimeoutFunction()
+//  {
+//      doStuff();
+//      setTimeout(myTimeoutFunction, 1000);
+//  }
+ 
+//  myTimeoutFunction();
+// console.log(element)
 })();
     

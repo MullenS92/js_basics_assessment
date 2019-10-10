@@ -27,9 +27,48 @@
   function addImage(name) {
     var img = document.createElement('img');
     img.src = name;
-    document.getElementById('image-box').appendChild(img);
+
+     document.getElementById('image-box').appendChild(img);
   }
 
   //your code here
 
+//function setInterval(addImage,2500);{
+
+//}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+let imageArray=[ "cats.jpg", "washington.jpg" , "jackson.jpg" , "internet.jpg", "hugger.jpg" ];
+
+ addImage((imageArray)[getRandomInt(imageArray.length)])
+
+
+function myTimeoutFunction() {
+
+    addImage((imageArray)[getRandomInt(imageArray.length)]);
+  
+  setTimeout(myTimeoutFunction,2500);
+
+ 
+
+}
+
+ myTimeoutFunction()
+ 
+//  function myTimeoutFunction()
+//  {
+//      doStuff();
+//      setTimeout(myTimeoutFunction, 1000);
+//  }
+ 
+//  myTimeoutFunction();
+ 
+
+
 })();
+
+
+

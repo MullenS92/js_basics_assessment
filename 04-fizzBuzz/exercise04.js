@@ -1,19 +1,26 @@
-(function fizBuzz(maxValue) {
-    let fizzBuzzString =""
-    for (let i = 1; i <=maxValue; i=i+1) {
-        if i %2 == 0 && i & 3 ==0 }
+(function () {
 
-        fizzBuzzString =fizzBuzzString + "FizzBuzz ,"
+    function fizBuzz(maxValue) {
+        let fizzBuzzString = ""
+        for (let i = 1; i <= maxValue; i++) {
+            if (i % 2 == 0 && i % 3 == 0) {
 
-        }else if (i%2 ===0) {
-            fizzBuzzString =fizzBuzzString + "FIzz, "
+                fizzBuzzString += "FizzBuzz, "
 
-        }else if ( i% 3 ===0){
-            fizzBuzzString =fizzBuzzString + "Buzz,"
-        }else {
-            fizzBuzzString =fizzBuzzString +1 + " "
+            } else if (i % 2 === 0) {
+                fizzBuzzString = fizzBuzzString + "Fizz, "
+
+            } else if (i % 3 === 0) {
+                fizzBuzzString = fizzBuzzString + "Buzz, "
+            } else {
+                fizzBuzzString = fizzBuzzString + i + ", "
+            }
+            
         }
+        return fizzBuzzString;
     }
+    
+    console.log(fizBuzz(12))
     /**
      * This exercise will introduce you to a common programming puzzle called FizzBuzz. 
      * It requires that you use both loops and conditionals. 
@@ -38,5 +45,5 @@
      */
 
     //your code here
-    
+
 })();

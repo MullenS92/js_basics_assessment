@@ -10,7 +10,7 @@
 (function() {
 
     //your code here
-    console.log (artArray)
+    
     for (let i=1; i <=artArray.length; i++){
         artArray.splice(i, 1)
     }
@@ -20,4 +20,6 @@
 
 })();
 
+
+console.log (artArray)
 
